@@ -14,10 +14,6 @@ import { Trans } from '@kit/ui/trans';
 import { SiteNavigationItem } from './site-navigation-item';
 
 const links = {
-  SolopreneurMBA: {
-    label: 'marketing:solopreneurMBA',
-    path: '/solopreneur-mba',
-  },
   Blog: {
     label: 'marketing:blog',
     path: '/blog',

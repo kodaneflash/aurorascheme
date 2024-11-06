@@ -1,21 +1,16 @@
-import { withI18n } from '~/lib/i18n/with-i18n';
-import { createI18nServerInstance } from '~/lib/i18n/i18n.server';
+'use client';
 
-export const generateMetadata = async () => {
-  const { t } = await createI18nServerInstance();
+import { Hero } from '@kit/ui/hero2';
+import { SitePageHeader } from '~/(marketing)/_components/site-page-header';
 
-  return {
-    title: t('marketing:joinNewsletter'),
-    description: t('marketing:joinNewsletterDescription'),
-  };
-};
-
-async function NewsletterPage() {
+export default function NewsletterPage() {
   return (
     <div>
-      {/* Page content goes here */}
+      <SitePageHeader
+        title="Newsletter"
+        subtitle="Join our community of entrepreneurs"
+      />
+      <Hero />
     </div>
   );
 }
-
-export default withI18n(NewsletterPage);
