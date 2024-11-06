@@ -1,4 +1,4 @@
-import { Urbanist as HeadingFont, Inter as SansFont } from 'next/font/google';
+import { Inter as HeadingFont, Inter as SansFont } from 'next/font/google';
 
 /**
  * @sans
@@ -16,14 +16,14 @@ const sans = SansFont({
 /**
  * @heading
  * @description Define here the heading font.
- * By default, it uses the Urbanist font from Google Fonts.
+ * By default, it uses the Inter font from Google Fonts.
  */
 const heading = HeadingFont({
   subsets: ['latin'],
   variable: '--font-heading',
   fallback: ['system-ui', 'Helvetica Neue', 'Helvetica', 'Arial'],
   preload: true,
-  weight: ['500', '600'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
 });
 
 // we export these fonts into the root layout
