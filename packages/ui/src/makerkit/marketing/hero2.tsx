@@ -10,13 +10,12 @@ export function Hero() {
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     
     try {
-      // Implement your newsletter signup logic here
-      // For example: await subscribeToNewsletter(email);
+      // Synchronous newsletter signup logic here
       setMessage("Thanks for subscribing!");
       setEmail("");
     } catch (error) {

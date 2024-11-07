@@ -44,7 +44,7 @@ function Home() {
               
               <div>
                 <p className="text-muted-foreground">
-                  The complete blueprint for building profitable one-person online businesses. Access premium resources, expert-led courses, and weekly validated profitable business ideas to build, launch and scale.
+                The membership for solopreneurs and creators leveraging internet audiences to build profitable one-person online businesses.
                 </p>
                 <p className="text-muted-foreground">
                   Launch your online empire today.

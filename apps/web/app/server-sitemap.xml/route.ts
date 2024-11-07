@@ -30,7 +30,7 @@ function getPaths() {
     '/terms-of-service',
     '/privacy-policy',
     '/newsletter',
-    '/solopreneur-mba',
+
     //
   ];
 
