@@ -136,7 +136,7 @@ function MainCallToActionButton() {
   return (
     <div className={'flex'}>
       <Button asChild>
-        <Link href="https://pro.foundersolo.co/checkout/premium">
+        <Link href="https://foundersolo.co/newsletter">
           <span className={'flex items-center space-x-0.5'}>
             <span>
               <Trans i18nKey={'common:joinCommunity'} />
