@@ -30,6 +30,7 @@ export default {
       },
       backgroundImage: {
         'business-empire-gradient': 'linear-gradient(90deg, oklch(0.748 0.26 342.55) 4%, oklch(0.7328 0.2405 2.36499) 22%, oklch(0.6569 0.196 275.75) 45%, oklch(0.701 0.1815 229.68) 67%, oklch(0.7451 0.167 183.61) 100.2%)',
+        'gradient-primary': 'linear-gradient(98.7529deg, rgb(202, 198, 251) 0%, rgb(186, 239, 251) 50%, rgb(225, 251, 156) 100%)',
       },
       fontFamily: {
         heading: ['var(--font-heading)', 'system-ui', 'sans-serif'],

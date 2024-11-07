@@ -26,6 +26,7 @@ import { cn } from '@kit/ui/utils';
 import billingConfig from '~/config/billing.config';
 import pathsConfig from '~/config/paths.config';
 import { withI18n } from '~/lib/i18n/with-i18n';
+import { SubscriptionForm } from './_components/SubscriptionForm';
 
 
 function Home() {
@@ -44,14 +45,16 @@ function Home() {
               
               <div>
                 <p className="text-muted-foreground">
-                The membership for solopreneurs and creators leveraging internet audiences to build profitable one-person online businesses.
+                  The membership for solopreneurs and creators leveraging internet audiences to build profitable one-person online businesses.
                 </p>
                 <p className="text-muted-foreground">
                   Launch your online empire today.
                 </p>
               </div>
 
-              <MainCallToActionButton />
+              <div className="w-full flex justify-center">
+                <SubscriptionForm />
+              </div>
             </div>
           </div>
         </div>
@@ -129,29 +132,6 @@ function Pill(props: React.PropsWithChildren) {
       <Sparkle className={'inline-block h-4 text-gray-400'} />
       <span>{props.children}</span>
     </h2>
-  );
-}
-
-function MainCallToActionButton() {
-  return (
-    <div className={'flex'}>
-      <Button asChild>
-        <Link href="https://foundersolo.co/newsletter">
-          <span className={'flex items-center space-x-0.5'}>
-            <span>
-              <Trans i18nKey={'common:joinCommunity'} />
-            </span>
-
-            <ChevronRight
-              className={
-                'h-4 animate-in fade-in slide-in-from-left-8' +
-                ' delay-800 duration-1000 zoom-in fill-mode-both'
-              }
-            />
-          </span>
-        </Link>
-      </Button>
-    </div>
   );
 }
 

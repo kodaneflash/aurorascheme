@@ -81,10 +81,12 @@ function AuthButtons() {
         </Button>
       </div>
 
-      <Button asChild className="group" variant={'default'}>
+      <Button 
+        asChild 
+        className="group gradientprimary text-gray-800 hover:text-gray-900 border-0"
+      >
         <Link href={pathsConfig.auth.signUp}>
           <Trans i18nKey={'auth:signUp'} />
-
           <ChevronRight
             className={
               'ml-1 h-4 w-4 transition-transform duration-500 group-hover:translate-x-1'

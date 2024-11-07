@@ -99,4 +99,9 @@ Optimize dropdowns for mobile
   .business-empire-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
   }
+
+  .gradientprimary {
+    background: linear-gradient(98.7529deg, rgb(202, 198, 251) 0%, rgb(186, 239, 251) 50%, rgb(225, 251, 156) 100%);
+    @apply hover:opacity-90 transition-opacity;
+  }
 }
