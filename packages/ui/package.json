@@ -120,14 +120,15 @@
     "./mode-toggle": "./src/makerkit/mode-toggle.tsx",
     "./enhanced-data-table": "./src/makerkit/data-table.tsx",
     "./language-selector": "./src/makerkit/language-selector.tsx",
-    "./stepper": "./src/makerkit/stepper.tsx", 
+    "./stepper": "./src/makerkit/stepper.tsx",
     "./cookie-banner": "./src/makerkit/cookie-banner.tsx",
     "./card-button": "./src/makerkit/card-button.tsx",
     "./version-updater": "./src/makerkit/version-updater.tsx",
     "./marketing": "./src/makerkit/marketing/index.tsx",
     "./empty-state": "./src/makerkit/empty-state.tsx",
     "./multi-step-form": "./src/makerkit/multi-step-form.tsx",
-    "./hero2": "./src/makerkit/marketing/hero2.tsx"
+    "./hero2": "./src/makerkit/marketing/hero2.tsx",
+    "./iphone-15-pro": "./src/shadcn/iphone-15-pro.tsx"
   },
   "typesVersions": {
     "*": {

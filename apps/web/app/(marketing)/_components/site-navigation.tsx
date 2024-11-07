@@ -22,6 +22,18 @@ const links = {
     label: 'marketing:newsletter',
     path: '/newsletter',
   },
+  Academy: {
+    label: 'marketing:academy',
+    path: '/academy',
+  },
+  Ideas: {
+    label: 'marketing:ideas',
+    path: '/ideas',
+  },
+  CaseStudies: {
+    label: 'marketing:caseStudies',
+    path: '/case-studies',
+  },
 };
 
 export function SiteNavigation() {

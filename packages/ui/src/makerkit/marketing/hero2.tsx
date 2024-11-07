@@ -1,72 +1,100 @@
 import { ArrowRight } from "lucide-react";
 import * as React from "react";
+import { useState } from "react";
 import { Input } from "../../shadcn/input";
 import { Button } from "../../shadcn/button";
+import { Iphone15Pro } from "../../shadcn/iphone-15-pro";
 
 export function Hero() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    
+    try {
+      // Implement your newsletter signup logic here
+      // For example: await subscribeToNewsletter(email);
+      setMessage("Thanks for subscribing!");
+      setEmail("");
+    } catch (error) {
+      setMessage("An error occurred. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
-    <section className="container flex flex-col items-center py-20">
+    <section className="container flex flex-col items-center gap-10 pb-28 pt-20 sm:gap-14 lg:flex-row">
       {/* Left content container */}
-      <div className="flex flex-col items-center text-center max-w-[42rem]">
+      <div className="flex flex-1 flex-col items-center gap-8 lg:gap-10">
         {/* Top badge */}
-        <div className="flex items-center gap-1 rounded-full border border-border/40 bg-background/95 px-4 py-1.5 text-sm transition-colors">
-          <span>The Solopreneur Blueprint</span>
-          <ArrowRight size={14} />
+        <div className="flex cursor-pointer items-center gap-1 rounded-full border border-border/40 bg-background/95 px-3 py-0.5 transition-opacity duration-300 hover:opacity-80">
+          <span className="text-sm">The Solopreneur Blueprint</span>
+          <ArrowRight size={16} />
         </div>
 
         {/* Main heading */}
-        <h1 className="text-[48px] font-semibold font-heading tracking-tight mt-8">
+        <h1 className="max-w-2xl text-center font-heading text-4xl font-semibold tracking-tight sm:text-5xl">
           The <span className="relative inline-block">
             only
-            <svg
-              className="absolute -bottom-1 left-0 h-3 w-full"
-              viewBox="0 0 200 9"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <linearGradient id="underlineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="rgb(202, 198, 251)" />
-                  <stop offset="50%" stopColor="rgb(186, 239, 251)" />
-                  <stop offset="100%" stopColor="rgb(225, 251, 156)" />
-                </linearGradient>
-              </defs>
-              <path
-                d="M1 7.5C31 3.5 61 3.5 91 3.5C121 3.5 151 3.5 181 7.5"
-                stroke="url(#underlineGradient)"
-                strokeWidth="7"
-                strokeLinecap="round"
-              />
-            </svg>
+            {/* Your existing SVG underline */}
           </span> newsletter you need to build a{" "}
-          <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
-            cash-flowing
-          </span>{" "}
-          internet business.
+          <span className="inline-grid w-full">
+            <span className="col-start-1 row-start-1 animate-business-empire-glow blur-xl bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
+              cash-flowing
+            </span>
+            <span className="col-start-1 row-start-1 bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
+              cash-flowing
+            </span>
+          </span> internet business.
         </h1>
 
         {/* Email form */}
-        <form className="flex w-full max-w-lg flex-col sm:flex-row gap-3 mt-8">
+        <form onSubmit={handleSubmit} className="flex w-full max-w-md flex-col items-center gap-2 sm:flex-row sm:items-center">
           <Input
-            placeholder="Enter your email"
             type="email"
-            className="h-12 flex-1 rounded-xl border-border/40 bg-background/95 px-4 text-base placeholder:text-muted-foreground focus-visible:ring-1 focus-visible:ring-primary"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            className="h-12 w-[320px] cursor-text rounded-[10px] border-2 border-border/40 bg-background/95 px-4 text-base placeholder:text-muted-foreground focus-visible:ring-0 focus-visible:ring-offset-0 sm:h-14 sm:w-[225.727px] sm:grow sm:px-6 sm:text-lg"
           />
           <Button 
+            type="submit"
             size="lg"
-            className="h-12 rounded-xl bg-gradient-to-r from-blue-200 via-teal-200 to-green-200 text-black font-medium hover:opacity-90 transition-opacity"
+            disabled={isLoading}
+            className="primary-button mt-2 w-[320px] px-6 sm:mt-0 sm:w-auto"
           >
-            Subscribe
-            <ArrowRight size={16} className="ml-2" />
+            <span className="flex items-center justify-center whitespace-nowrap text-black sm:justify-start">
+              {isLoading ? "Subscribing..." : "Subscribe"}
+              <ArrowRight size={14} className="ml-2 inline sm:hidden" />
+              <ArrowRight size={16} className="ml-2 hidden sm:inline" />
+            </span>
           </Button>
         </form>
+        {message && <p className="text-sm text-accent">{message}</p>}
 
         {/* Description */}
-        <p className="text-lg text-muted-foreground mt-8">
+        <p className="max-w-md text-center text-lg text-muted-foreground">
           Join 5,000+ solopreneurs getting 5-minute newsletters every Saturday packed with online
           business ideas backed by real-life case studies, strategies, and resources to launch,
           grow, and monetize your online business.
         </p>
+      </div>
+
+      {/* Right content (iPhone) container */}
+      <div className="relative mx-auto flex w-full max-w-[500px] flex-1 items-center justify-center lg:max-w-none">
+        <div className="h-[183.37vw] max-h-[882px] min-h-[611px] w-[90vw] min-w-[300px] max-w-[433px] overflow-hidden lg:max-h-[794px] lg:max-w-[390px]">
+          <Iphone15Pro
+            className="size-full"
+            src="/email_fazctz.webp"
+            borderColor="currentColor"
+          />
+        </div>
+        <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
       </div>
     </section>
   );

@@ -32,5 +32,11 @@
   "contactSuccessDescription": "We have received your message and will get back to you as soon as possible",
   "contactErrorDescription": "An error occurred while sending your message. Please try again later",
   "footerDescription": "Empowering solo entrepreneurs with the blueprint to building, launching, and scaling, and monetizing one-person online businesses.",
-  "copyright": "© Copyright {{year}} {{product}}. All Rights Reserved."
+  "copyright": "© Copyright {{year}} {{product}}. All Rights Reserved.",
+  "academy": "Academy",
+  "academySubtitle": "Learn how to build and scale your business",
+  "ideas": "Ideas",
+  "ideasSubtitle": "Explore innovative business opportunities",
+  "caseStudies": "Case Studies",
+  "caseStudiesSubtitle": "Real success stories and insights"
 }

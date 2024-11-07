@@ -58,11 +58,6 @@ export function SiteFooter() {
 
                 <FooterSectionList>
                   <FooterLink>
-                    <Link href={'/solopreneur-mba'}>
-                      <Trans i18nKey={'marketing:solopreneurMBA'} />
-                    </Link>
-                  </FooterLink>
-                  <FooterLink>
                     <Link href={'/blog'}>
                       <Trans i18nKey={'marketing:blog'} />
                     </Link>
