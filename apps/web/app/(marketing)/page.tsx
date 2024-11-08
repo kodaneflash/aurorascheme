@@ -22,6 +22,7 @@ import { Button } from '@kit/ui/button';
 import { Heading } from '@kit/ui/heading';
 import { Trans } from '@kit/ui/trans';
 import { cn } from '@kit/ui/utils';
+import { Testimonials } from '@kit/ui/testimonials';
 
 import billingConfig from '~/config/billing.config';
 import pathsConfig from '~/config/paths.config';
@@ -70,6 +71,9 @@ function Home() {
             alt={`App Image`}
           />
         </div>
+
+        {/* Add Testimonials Section here, before Pricing */}
+        <Testimonials />
 
         {/* Pricing Section */}
         <div className={'container mx-auto'}>

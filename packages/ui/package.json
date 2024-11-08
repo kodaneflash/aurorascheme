@@ -75,7 +75,8 @@
     "./avatar": "./src/shadcn/avatar.tsx",
     "./button": "./src/shadcn/button.tsx",
     "./calendar": "./src/shadcn/calendar.tsx",
-    "./card": "./src/shadcn/card.tsx",
+    "./card": "./src/makerkit/card.tsx",
+    "./ui/card": "./src/shadcn/card.tsx",
     "./checkbox": "./src/shadcn/checkbox.tsx",
     "./command": "./src/shadcn/command.tsx",
     "./data-table": "./src/shadcn/data-table.tsx",
@@ -128,7 +129,8 @@
     "./empty-state": "./src/makerkit/empty-state.tsx",
     "./multi-step-form": "./src/makerkit/multi-step-form.tsx",
     "./hero2": "./src/makerkit/marketing/hero2.tsx",
-    "./iphone-15-pro": "./src/shadcn/iphone-15-pro.tsx"
+    "./iphone-15-pro": "./src/shadcn/iphone-15-pro.tsx",
+    "./testimonials": "./src/shadcn/testimonials.tsx"
   },
   "typesVersions": {
     "*": {
