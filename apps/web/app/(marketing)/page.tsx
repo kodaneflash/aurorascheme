@@ -23,6 +23,7 @@ import { Heading } from '@kit/ui/heading';
 import { Trans } from '@kit/ui/trans';
 import { cn } from '@kit/ui/utils';
 import { Testimonials } from '@kit/ui/testimonials';
+import { AppleCardsCarouselDemo } from '@kit/ui/apple-cards-carousel-demo';
 
 import billingConfig from '~/config/billing.config';
 import pathsConfig from '~/config/paths.config';
@@ -35,7 +36,7 @@ function Home() {
     <div className={'mt-4 flex flex-col space-y-24 py-16'}>
       <div className={'container mx-auto flex flex-col space-y-20'}>
         {/* Hero Section */}
-        <div className={'flex flex-col items-center md:flex-row mx-auto flex-1 justify-center animate-in fade-in duration-500 zoom-in-95 slide-in-from-top-24'}>
+        <div className={'relative flex flex-col items-center md:flex-row mx-auto flex-1 justify-center animate-in fade-in duration-500 zoom-in-95 slide-in-from-top-24'}>
           <div className={'flex w-full flex-1 flex-col items-center space-y-8 xl:space-y-12 2xl:space-y-14'}>
             <Pill>
               <span>For creators and solopreneurs</span>
@@ -74,6 +75,9 @@ function Home() {
 
         {/* Add Testimonials Section here, before Pricing */}
         <Testimonials />
+
+        {/* Add Carousel Section */}
+        <AppleCardsCarouselDemo />
 
         {/* Pricing Section */}
         <div className={'container mx-auto'}>

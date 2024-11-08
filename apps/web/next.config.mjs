@@ -82,6 +82,15 @@ function getRemotePatterns() {
       protocol: 'https',
       hostname: 'www.foundersolo.co',
     },
+    // Add Unsplash and Aceternity domains
+    {
+      protocol: 'https',
+      hostname: 'images.unsplash.com',
+    },
+    {
+      protocol: 'https',
+      hostname: 'assets.aceternity.com',
+    },
     // Keep any existing patterns
   ];
 
