@@ -89,7 +89,7 @@ const tabs = [
 
 export function FeatureTabs() {
   return (
-    <div className="flex flex-col items-center space-y-16 max-w-5xl mx-auto w-full">
+    <div className="flex flex-col items-center space-y-16 max-w-5xl mx-auto w-full pt-48">
       <div className="text-center space-y-8">
         <div className="text-4xl sm:text-5xl lg:text-6xl mx-auto font-heading font-semibold text-foreground">
           <span className="inline-flex flex-wrap justify-center items-center gap-x-2">
@@ -99,7 +99,7 @@ export function FeatureTabs() {
               className="text-primary font-bold"
               duration={2500}
             />{' '}
-          </span>age
+          </span>
           <span className="text-muted-foreground font-normal text-2xl sm:text-3xl lg:text-4xl block mt-4">
             websites with Aceternity UI
           </span>
@@ -110,7 +110,7 @@ export function FeatureTabs() {
         </p>
       </div>
 
-      <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col w-full items-start justify-start">
+      <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col w-full items-start justify-start mt-24">
         <Tabs 
           tabs={tabs}
           containerClassName="flex-wrap justify-start gap-2"

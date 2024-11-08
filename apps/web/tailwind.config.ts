@@ -34,22 +34,4 @@ export default {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('tailwindcss-animate')
-  ],
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-    content: [
-      './pages/**/*.{js,ts,jsx,tsx}',
-      './components/**/*.{js,ts,jsx,tsx}',
-      './app/**/*.{js,ts,jsx,tsx}',
-    ],
-    options: {
-      safelist: [],
-      blocklist: [],
-      keyframes: true,
-      fontFace: true,
-    },
-  },
 } satisfies Config;

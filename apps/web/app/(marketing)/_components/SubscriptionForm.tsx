@@ -56,13 +56,13 @@ export function SubscriptionForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="h-12 border-border px-6 text-lg focus-visible:ring-0 focus-visible:ring-offset-0 sm:h-14 sm:flex-1"
+          className="h-12 border-border px-6 text-lg focus-visible:ring-0 focus-visible:ring-offset-0 sm:h-14 sm:flex-1 w-full"
         />
         <Button 
           type="submit" 
           size="lg" 
           disabled={isLoading}
-          className="h-12 cursor-pointer text-base sm:h-14"
+          className="h-12 cursor-pointer text-base sm:h-14 w-full sm:w-auto"
         >
           <span className="flex items-center justify-center">
             {isLoading ? "Subscribing..." : "Subscribe"}
