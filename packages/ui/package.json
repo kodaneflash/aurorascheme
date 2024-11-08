@@ -32,6 +32,7 @@
     "aceternity-ui": "^0.2.2",
     "clsx": "^2.1.1",
     "cmdk": "1.0.0",
+    "cobe": "^0.6.3",
     "framer-motion": "^11.11.8",
     "input-otp": "1.2.4",
     "lucide-react": "^0.400.0",
@@ -136,7 +137,9 @@
     "./spotlight": "./src/aceternity/spotlight.tsx",
     "./apple-cards-carousel": "./src/aceternity/apple-cards-carousel.tsx",
     "./apple-cards-carousel-demo": "./src/aceternity/apple-cards-carousel-demo.tsx",
-    "./dummy-content": "./src/aceternity/dummy-content.tsx"
+    "./dummy-content": "./src/aceternity/dummy-content.tsx",
+    "./feature-section-1": "./src/aceternity/feature-section-1.tsx",
+    "./animated-tabs": "./src/aceternity/animated-tabs.tsx"
   },
   "typesVersions": {
     "*": {

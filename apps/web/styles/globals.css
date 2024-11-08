@@ -102,4 +102,15 @@ Optimize dropdowns for mobile
   .text-clean-subtext {
     @apply text-[18px] font-light py-4 text-center max-w-lg mx-auto text-muted-foreground;
   }
+
+  /* Hide scrollbar styles */
+  .no-visible-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .no-visible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }

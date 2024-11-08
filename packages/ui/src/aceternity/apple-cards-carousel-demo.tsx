@@ -59,4 +59,5 @@ const data = [
   },
 ];
 
-export type { Card as CardType } from "./apple-cards-carousel"; 
+// Add default export for better compatibility
+export default AppleCardsCarouselDemo;

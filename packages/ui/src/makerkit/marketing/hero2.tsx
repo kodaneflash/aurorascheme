@@ -31,7 +31,7 @@ export function Hero() {
       <div className="flex flex-1 flex-col items-center gap-8 lg:gap-10">
         {/* Top badge */}
         <div className="flex cursor-pointer items-center gap-1 rounded-full border border-border/40 bg-background/95 px-3 py-0.5 transition-opacity duration-300 hover:opacity-80">
-          <span className="text-sm">The Solopreneur Blueprint</span>
+          <span className="text-sm">Announcing Founder Academy </span>
           <ArrowRight size={16} />
         </div>
 

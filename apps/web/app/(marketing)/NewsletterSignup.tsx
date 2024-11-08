@@ -17,7 +17,7 @@ export function NewsletterSignup() {
   return (
     <NewsletterSignupContainer 
       onSignup={handleNewsletterSignup}
-      heading={<span className="font-bold">The Solopreneur Blueprint</span>}
+      heading={<span className="font-bold">Announcing Founder Acad</span>}
       description="How to find online business ideas, launch fast, and get profitable. Join 9,000+ Solopreneurs"
       successMessage="You're all set! Check your inbox for a confirmation email."
       errorMessage="Oops! Something went wrong. Please try again later."

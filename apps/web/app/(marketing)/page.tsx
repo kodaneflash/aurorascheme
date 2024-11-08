@@ -24,6 +24,9 @@ import { Trans } from '@kit/ui/trans';
 import { cn } from '@kit/ui/utils';
 import { Testimonials } from '@kit/ui/testimonials';
 import { AppleCardsCarouselDemo } from '@kit/ui/apple-cards-carousel-demo';
+import { FeatureTabs } from './_components/FeatureTabs';
+import { Tabs as AnimatedTabs } from '@kit/ui/animatedtabs';
+import { Pill } from './_components/Pill';
 
 import billingConfig from '~/config/billing.config';
 import pathsConfig from '~/config/paths.config';
@@ -35,7 +38,6 @@ function Home() {
   return (
     <div className={'mt-4 flex flex-col space-y-24 py-16'}>
       <div className={'container mx-auto flex flex-col space-y-20'}>
-        {/* Hero Section */}
         <div className={'relative flex flex-col items-center md:flex-row mx-auto flex-1 justify-center animate-in fade-in duration-500 zoom-in-95 slide-in-from-top-24'}>
           <div className={'flex w-full flex-1 flex-col items-center space-y-8 xl:space-y-12 2xl:space-y-14'}>
             <Pill>
@@ -73,10 +75,15 @@ function Home() {
           />
         </div>
 
-        {/* Add Testimonials Section here, before Pricing */}
+        {/* Replace the old tabs section with the new component */}
+        <div className="animate-in fade-in delay-200 duration-1000 slide-in-from-top-16 fill-mode-both">
+          <FeatureTabs />
+        </div>
+
+        {/* Testimonials Section */}
         <Testimonials />
 
-        {/* Add Carousel Section */}
+        {/* Carousel Section */}
         <AppleCardsCarouselDemo />
 
         {/* Pricing Section */}
@@ -127,19 +134,6 @@ function HeroTitle() {
         </span>
       </span>
     </h1>
-  );
-}
-
-function Pill(props: React.PropsWithChildren) {
-  return (
-    <h2
-      className={
-        'flex items-center space-x-2 rounded-full bg-gray-100/50 dark:bg-gray-800/50 px-4 py-2 text-center text-sm text-gray-700 shadow dark:text-gray-200 dark:shadow-primary/20'
-      }
-    >
-      <Sparkle className={'inline-block h-4 text-gray-400'} />
-      <span>{props.children}</span>
-    </h2>
   );
 }
 
