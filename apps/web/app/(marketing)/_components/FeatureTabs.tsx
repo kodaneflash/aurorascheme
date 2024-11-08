@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Tabs } from '@kit/ui/animated-tabs';
+import { FlipWords } from '@kit/ui/aceternity/flip-words';
 
 const tabs = [
   {
@@ -88,14 +89,36 @@ const tabs = [
 
 export function FeatureTabs() {
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-40">
-      <Tabs 
-        tabs={tabs}
-        containerClassName="flex-wrap justify-start gap-2"
-        tabClassName="text-sm md:text-base"
-        contentClassName="mt-8"
-        activeTabClassName="bg-white/10 backdrop-blur-sm"
-      />
+    <div className="flex flex-col items-center space-y-16 max-w-5xl mx-auto w-full">
+      <div className="text-center space-y-8">
+        <div className="text-4xl sm:text-5xl lg:text-6xl mx-auto font-heading font-semibold text-foreground">
+          <span className="inline-flex flex-wrap justify-center items-center gap-x-2">
+            Build{' '}
+            <FlipWords 
+              words={["better", "modern", "beautiful", "powerful"]} 
+              className="text-primary font-bold"
+              duration={2500}
+            />{' '}
+          </span>
+          <span className="text-muted-foreground font-normal text-2xl sm:text-3xl lg:text-4xl block mt-4">
+            websites with Aceternity UI
+          </span>
+        </div>
+        
+        <p className="text-clean-subtext">
+          Discover our collection of beautiful, animated components
+        </p>
+      </div>
+
+      <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col w-full items-start justify-start">
+        <Tabs 
+          tabs={tabs}
+          containerClassName="flex-wrap justify-start gap-2"
+          tabClassName="text-sm md:text-base"
+          contentClassName="mt-8"
+          activeTabClassName="bg-white/10 backdrop-blur-sm"
+        />
+      </div>
     </div>
   );
 } 

@@ -25,8 +25,6 @@ import { cn } from '@kit/ui/utils';
 import { Testimonials } from '@kit/ui/testimonials';
 import { AppleCardsCarouselDemo } from '@kit/ui/apple-cards-carousel-demo';
 import { FeatureTabs } from './_components/FeatureTabs';
-import { Tabs as AnimatedTabs } from '@kit/ui/animatedtabs';
-import { Pill } from './_components/Pill';
 
 import billingConfig from '~/config/billing.config';
 import pathsConfig from '~/config/paths.config';
@@ -75,7 +73,7 @@ function Home() {
           />
         </div>
 
-        {/* Replace the old tabs section with the new component */}
+        {/* FeatureTabs section */}
         <div className="animate-in fade-in delay-200 duration-1000 slide-in-from-top-16 fill-mode-both">
           <FeatureTabs />
         </div>
@@ -134,6 +132,19 @@ function HeroTitle() {
         </span>
       </span>
     </h1>
+  );
+}
+
+function Pill(props: React.PropsWithChildren) {
+  return (
+    <h2
+      className={
+        'flex items-center space-x-2 rounded-full bg-gray-100/50 dark:bg-gray-800/50 px-4 py-2 text-center text-sm text-gray-700 shadow dark:text-gray-200 dark:shadow-primary/20'
+      }
+    >
+      <Sparkle className={'inline-block h-4 text-gray-400'} />
+      <span>{props.children}</span>
+    </h2>
   );
 }
 

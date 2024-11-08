@@ -139,7 +139,8 @@
     "./apple-cards-carousel-demo": "./src/aceternity/apple-cards-carousel-demo.tsx",
     "./dummy-content": "./src/aceternity/dummy-content.tsx",
     "./feature-section-1": "./src/aceternity/feature-section-1.tsx",
-    "./animated-tabs": "./src/aceternity/animated-tabs.tsx"
+    "./animated-tabs": "./src/aceternity/animated-tabs.tsx",
+    "./aceternity/flip-words": "./src/aceternity/flip-words.tsx"
   },
   "typesVersions": {
     "*": {
