@@ -46,13 +46,7 @@
     --destructive-foreground: 0 0% 100%;
     --ring: 229 100% 62%;
   }
-
-  .text-muted-foreground {
-    @apply text-[18px] font-light py-4 text-center max-w-lg mx-auto;
-    color: hsl(var(--muted-foreground));
-  }
 }
-
 
 @layer base {
   body {
@@ -103,5 +97,9 @@ Optimize dropdowns for mobile
   .gradientprimary {
     background: linear-gradient(98.7529deg, rgb(202, 198, 251) 0%, rgb(186, 239, 251) 50%, rgb(225, 251, 156) 100%);
     @apply hover:opacity-90 transition-opacity;
+  }
+
+  .text-clean-subtext {
+    @apply text-[18px] font-light py-4 text-center max-w-lg mx-auto text-muted-foreground;
   }
 }

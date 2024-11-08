@@ -40,7 +40,20 @@ export default {
       },
       fontWeight: {
         black: '900',
-      }
+      },
+      typography: {
+        'clean-subtext': {
+          css: {
+            fontSize: '18px',
+            fontWeight: '300',
+            lineHeight: '1.6',
+            textAlign: 'center',
+            maxWidth: '32rem',
+            margin: '0 auto',
+            padding: '1rem 0',
+          },
+        },
+      },
     },
   },
 } satisfies Config;

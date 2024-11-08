@@ -43,11 +43,11 @@ function Home() {
             <div className={'flex flex-col items-center space-y-8'}>
               <HeroTitle />
               
-              <div>
-                <p className="text-muted-foreground">
+              <div className="flex flex-col space-y-2">
+                <p className="text-clean-subtext">
                   The membership for solopreneurs and creators leveraging internet audiences to build profitable one-person online businesses.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-clean-subtext">
                   Launch your online empire today.
                 </p>
               </div>
