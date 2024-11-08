@@ -142,7 +142,10 @@
     "./feature-section-1": "./src/aceternity/feature-section-1.tsx",
     "./animated-tabs": "./src/aceternity/animated-tabs.tsx",
     "./aceternity/flip-words": "./src/aceternity/flip-words.tsx",
-    "./tweet-grid-demo": "./src/cult/tweet-grid-demo.tsx"
+    "./tweet-grid-demo": "./src/cult/tweet-grid-demo.tsx",
+    "./cta-section": "./src/shadcn/cta-section.tsx",
+    "./social-proof": "./src/shadcn/social-proof.tsx",
+    "./skeleton": "./src/shadcn/skeleton.tsx"
   },
   "typesVersions": {
     "*": {

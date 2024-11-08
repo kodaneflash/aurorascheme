@@ -81,7 +81,7 @@ export function Hero() {
         {/* Description */}
         <p className="max-w-md text-center text-lg text-muted-foreground">
           Join 5,000+ solopreneurs getting 5-minute newsletters every Saturday packed with online
-          business ideas backed by real-life case studies, strategies, and resources to launch,
+          business ideas backed by real-life case studies,  expert interviews, and resources to launch,
           grow, and monetize your online business.
         </p>
       </div>

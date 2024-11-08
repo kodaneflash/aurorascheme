@@ -18,14 +18,6 @@ const links = {
     label: 'marketing:blog',
     path: '/blog',
   },
-  Newsletter: {
-    label: 'marketing:newsletter',
-    path: '/newsletter',
-  },
-  Academy: {
-    label: 'marketing:academy',
-    path: '/academy',
-  },
   Ideas: {
     label: 'marketing:ideas',
     path: '/ideas',
@@ -33,6 +25,14 @@ const links = {
   CaseStudies: {
     label: 'marketing:caseStudies',
     path: '/case-studies',
+  },
+  Academy: {
+    label: 'marketing:academy',
+    path: '/academy',
+  },
+  Newsletter: {
+    label: 'marketing:newsletter',
+    path: '/newsletter',
   },
 };
 

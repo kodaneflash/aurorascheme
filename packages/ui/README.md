@@ -17,6 +17,8 @@ npx shadcn-ui@latest add <component> --path=packages/ui/src/shadcn
 
 For example, to install the `Button` component, you can use the following command:
 
+
+
 ```bash
 npx shadcn-ui@latest add button --path=packages/ui/src/shadcn
 ```

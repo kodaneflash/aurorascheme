@@ -47,29 +47,32 @@ function Home() {
               
               <div className="flex flex-col space-y-2">
                 <p className="text-clean-subtext">
-                  The membership for solopreneurs and creators leveraging internet audiences to build profitable one-person online businesses.
+                  Join 60,000+ solopreneurs building profitable online businesses. Get weekly case studies, expert interviews, and actionable tips to help you earn more.
                 </p>
                 <p className="text-clean-subtext">
                   Launch your online empire today.
                 </p>
               </div>
 
-              <div className="w-full flex justify-center">
+              <div className="w-full flex flex-col items-center gap-8">
                 <SubscriptionForm />
               </div>
             </div>
           </div>
         </div>
 
-        {/* Dashboard Image */}
-        <div className={'mx-auto flex max-w-6xl justify-center animate-in fade-in delay-300 duration-1000 slide-in-from-top-16 fill-mode-both my-24'}>
-          <Image
-            priority
-            className={'delay-250 rounded-lg border duration-1000 ease-out animate-in fade-in zoom-in-50 fill-mode-both'}
-            width={1689}
-            height={1057}
-            src={`/images/dashboard.webp`}
-            alt={`App Image`}
+        {/* Senja Testimonials */}
+        <div className="-mx-[calc((100vw-100%)/2)] w-screen">
+          <Script
+            src="https://static.senja.io/dist/platform.js"
+            strategy="afterInteractive"
+            type="text/javascript"
+          />
+          <div
+            className="senja-embed"
+            data-id="50c3253b-f0f6-4dc1-8101-1f29a1fab06c"
+            data-mode="shadow"
+            data-lazyload="false"
           />
         </div>
 

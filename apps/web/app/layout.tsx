@@ -1,5 +1,6 @@
 import { cookies } from 'next/headers';
 import { Analytics } from '@vercel/analytics/react';
+import Script from 'next/script';
 
 import { Toaster } from '@kit/ui/sonner';
 import { cn } from '@kit/ui/utils';
@@ -30,6 +31,16 @@ export default async function RootLayout({
 
         <Toaster richColors={false} />
         <Analytics />
+        
+        {/* Optimized Senja Script Loading */}
+        <Script
+          src="https://static.senja.io/dist/platform.js"
+          strategy="lazyOnload"
+          id="senja-script"
+          onLoad={() => {
+            console.log('Senja script loaded successfully');
+          }}
+        />
       </body>
     </html>
   );
