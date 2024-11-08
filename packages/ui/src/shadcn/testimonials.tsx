@@ -7,7 +7,7 @@ export function Testimonials() {
       <div className="flex flex-col gap-3">
         <span className="font-bold uppercase text-primary text-center">Testimonials</span>
         <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl text-balance text-foreground text-center">
-          Praises for Founder Academy
+          Praises for <span className="gradienttext">Founder Academy</span>
         </h2>
       </div>
       <p className="text-clean-subtext">
@@ -16,7 +16,7 @@ export function Testimonials() {
       <div className="columns-1 gap-7 md:columns-2 lg:columns-3">
         <Card className="mt-7 inline-block break-inside-avoid shadow-lg">
           <CardContent className="flex flex-col items-start gap-4 divide-y p-7">
-            <p className="text-foreground">
+            <p className="text-clean-subtext !text-left !py-0">
               &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec ultrices
               orci. Vivamus ante arcu, hendrerit.&quot;
             </p>
@@ -38,7 +38,7 @@ export function Testimonials() {
         </Card>
         <Card className="mt-7 inline-block break-inside-avoid shadow-lg">
           <CardContent className="flex flex-col items-start gap-4 divide-y p-7">
-            <p className="text-foreground">
+            <p className="text-clean-subtext !text-left !py-0">
               &quot;Mauris tincidunt porttitor risus, et posuere erat malesuada eu. Praesent
               volutpat ut ipsum ac congue. Vestibulum nec orci ornare, imperdiet metus vel.&quot;
             </p>
@@ -60,7 +60,7 @@ export function Testimonials() {
         </Card>
         <Card className="mt-7 inline-block break-inside-avoid shadow-lg">
           <CardContent className="flex flex-col items-start gap-4 divide-y p-7">
-            <p className="text-foreground">
+            <p className="text-clean-subtext !text-left !py-0">
               &quot;Curabitur at quam eget eros semper euismod vitae at neque. Ut ultrices ut tortor
               et feugiat. Etiam vitae nisi eleifend, blandit ligula quis, sodales neque.&quot;
             </p>
@@ -82,7 +82,7 @@ export function Testimonials() {
         </Card>
         <Card className="mt-7 inline-block break-inside-avoid shadow-lg">
           <CardContent className="flex flex-col items-start gap-4 divide-y p-7">
-            <p className="text-foreground">
+            <p className="text-clean-subtext !text-left !py-0">
               &quot;Suspendisse a velit elit. Curabitur augue libero, vulputate sed dui id, sodales
               venenatis sem. Suspendisse dapibus neque eu justo volutpat gravida.&quot;
             </p>
@@ -104,7 +104,7 @@ export function Testimonials() {
         </Card>
         <Card className="mt-7 inline-block break-inside-avoid shadow-lg">
           <CardContent className="flex flex-col items-start gap-4 divide-y p-7">
-            <p className="text-foreground">
+            <p className="text-clean-subtext !text-left !py-0">
               &quot;Vivamus dignissim porta orci, finibus tempus risus consectetur dapibus. Donec
               quis ornare elit. Curabitur tempor.&quot;
             </p>
@@ -126,7 +126,7 @@ export function Testimonials() {
         </Card>
         <Card className="mt-7 inline-block break-inside-avoid shadow-lg">
           <CardContent className="flex flex-col items-start gap-4 divide-y p-7">
-            <p className="text-foreground">
+            <p className="text-clean-subtext !text-left !py-0">
               &quot;Nullam non lorem vitae risus volutpat dictum non sed magna. Aliquam in venenatis
               quam. Morbi feugiat tristique leo, vel ultrices dolor varius non.&quot;
             </p>

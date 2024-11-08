@@ -13,12 +13,12 @@
     --card-foreground: 229 63% 3%;
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --primary: 229 100% 62%;
+    --primary: 245 85% 88%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 229 20% 90%;
-    --secondary-foreground: 229 20% 30%;
-    --accent: 229 28% 85%;
-    --accent-foreground: 229 28% 25%;
+    --secondary: 190 90% 85%;
+    --secondary-foreground: 190 35% 25%;
+    --accent: 84 85% 80%;
+    --accent-foreground: 84 35% 25%;
     --destructive: 3 100% 50%;
     --destructive-foreground: 3 0% 100%;
     --ring: 229 100% 62%;
@@ -36,12 +36,12 @@
     --card-foreground: 0 0% 100%;
     --border: 215 27.9% 16.9%;
     --input: 215 27.9% 16.9%;
-    --primary: 229 100% 62%;
+    --primary: 245 85% 88%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 229 14% 8%;
-    --secondary-foreground: 229 14% 68%;
-    --accent: 229 23% 17%;
-    --accent-foreground: 229 23% 77%;
+    --secondary: 190 90% 85%;
+    --secondary-foreground: 190 35% 85%;
+    --accent: 84 85% 80%;
+    --accent-foreground: 84 35% 85%;
     --destructive: 3 89% 54%;
     --destructive-foreground: 0 0% 100%;
     --ring: 229 100% 62%;
@@ -103,14 +103,8 @@ Optimize dropdowns for mobile
     @apply text-[18px] font-light py-4 text-center max-w-lg mx-auto text-muted-foreground;
   }
 
-  /* Hide scrollbar styles */
-  .no-visible-scrollbar {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .no-visible-scrollbar::-webkit-scrollbar {
-    display: none;
+  .gradienttext {
+    background: linear-gradient(98.7529deg, rgb(202, 198, 251) 0%, rgb(186, 239, 251) 50%, rgb(225, 251, 156) 100%);
+    @apply bg-clip-text text-transparent;
   }
 }
