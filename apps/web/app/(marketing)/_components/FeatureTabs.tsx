@@ -99,7 +99,7 @@ export function FeatureTabs() {
               className="text-primary font-bold"
               duration={2500}
             />{' '}
-          </span>
+          </span>age
           <span className="text-muted-foreground font-normal text-2xl sm:text-3xl lg:text-4xl block mt-4">
             websites with Aceternity UI
           </span>

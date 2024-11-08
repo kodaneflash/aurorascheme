@@ -22,9 +22,9 @@ import { Button } from '@kit/ui/button';
 import { Heading } from '@kit/ui/heading';
 import { Trans } from '@kit/ui/trans';
 import { cn } from '@kit/ui/utils';
-import { Testimonials } from '@kit/ui/testimonials';
 import { AppleCardsCarouselDemo } from '@kit/ui/apple-cards-carousel-demo';
 import { FeatureTabs } from './_components/FeatureTabs';
+import { TweetGridDemo } from '@kit/ui/tweet-grid-demo';
 
 import billingConfig from '~/config/billing.config';
 import pathsConfig from '~/config/paths.config';
@@ -34,8 +34,8 @@ import { SubscriptionForm } from './_components/SubscriptionForm';
 
 function Home() {
   return (
-    <div className={'mt-4 flex flex-col space-y-24 py-16'}>
-      <div className={'container mx-auto flex flex-col space-y-20'}>
+    <div className={'mt-4 flex flex-col py-16'}>
+      <div className={'container mx-auto flex flex-col space-y-48'}>
         <div className={'relative flex flex-col items-center md:flex-row mx-auto flex-1 justify-center animate-in fade-in duration-500 zoom-in-95 slide-in-from-top-24'}>
           <div className={'flex w-full flex-1 flex-col items-center space-y-8 xl:space-y-12 2xl:space-y-14'}>
             <Pill>
@@ -62,7 +62,7 @@ function Home() {
         </div>
 
         {/* Dashboard Image */}
-        <div className={'mx-auto flex max-w-6xl justify-center py-12 animate-in fade-in delay-300 duration-1000 slide-in-from-top-16 fill-mode-both'}>
+        <div className={'mx-auto flex max-w-6xl justify-center animate-in fade-in delay-300 duration-1000 slide-in-from-top-16 fill-mode-both my-24'}>
           <Image
             priority
             className={'delay-250 rounded-lg border duration-1000 ease-out animate-in fade-in zoom-in-50 fill-mode-both'}
@@ -74,18 +74,22 @@ function Home() {
         </div>
 
         {/* FeatureTabs section */}
-        <div className="animate-in fade-in delay-200 duration-1000 slide-in-from-top-16 fill-mode-both">
+        <div className="animate-in fade-in delay-200 duration-1000 slide-in-from-top-16 fill-mode-both mb-24">
           <FeatureTabs />
         </div>
 
-        {/* Testimonials Section */}
-        <Testimonials />
+        {/* TweetGrid section */}
+        <div className="w-full my-24">
+          <TweetGridDemo />
+        </div>
 
         {/* Carousel Section */}
-        <AppleCardsCarouselDemo />
+        <div className="w-full my-24">
+          <AppleCardsCarouselDemo />
+        </div>
 
         {/* Pricing Section */}
-        <div className={'container mx-auto'}>
+        <div className={'container mx-auto mt-24'}>
           <div className={'flex flex-col items-center justify-center space-y-16 py-16'}>
             <div className={'flex flex-col items-center space-y-8 text-center'}>
               <Pill>Proident deserunt mollit aliquip commodo duis.</Pill>

@@ -37,6 +37,7 @@
     "input-otp": "1.2.4",
     "lucide-react": "^0.400.0",
     "react-top-loading-bar": "2.3.1",
+    "react-tweet": "^3.2.1",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
@@ -140,7 +141,8 @@
     "./dummy-content": "./src/aceternity/dummy-content.tsx",
     "./feature-section-1": "./src/aceternity/feature-section-1.tsx",
     "./animated-tabs": "./src/aceternity/animated-tabs.tsx",
-    "./aceternity/flip-words": "./src/aceternity/flip-words.tsx"
+    "./aceternity/flip-words": "./src/aceternity/flip-words.tsx",
+    "./tweet-grid-demo": "./src/cult/tweet-grid-demo.tsx"
   },
   "typesVersions": {
     "*": {
