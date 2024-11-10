@@ -5,14 +5,11 @@ import { Heading } from '@kit/ui/heading';
 import { cn } from '@kit/ui/utils';
 
 import { AppleCardsCarouselDemo } from '@kit/ui/apple-cards-carousel-demo';
-import { FeatureTabs } from './_components/FeatureTabs';
-import { TweetGridDemo } from '@kit/ui/tweet-grid-demo';
 
 import billingConfig from '~/config/billing.config';
 import pathsConfig from '~/config/paths.config';
 import { withI18n } from '~/lib/i18n/with-i18n';
 import { SubscriptionForm } from './_components/SubscriptionForm';
-import { SenjaScript } from '~/components/senja-script';
 
 function Home() {
   return (
@@ -39,23 +36,6 @@ function Home() {
               <div className="w-full max-w-md mx-auto">
                 <SubscriptionForm />
               </div>
-
-              {/* Senja Testimonials */}
-              <div className="relative w-full mt-32">
-                <div className="absolute left-1/2 -translate-x-1/2 w-screen">
-                  <div className="relative w-full max-w-[1920px] mx-auto px-4">
-                    <div
-                      className="senja-embed"
-                      data-id="50c3253b-f0f6-4dc1-8101-1f29a1fab06c"
-                      data-mode="shadow"
-                      data-lazyload="false"
-                    />
-                    <SenjaScript />
-                  </div>
-                </div>
-                {/* Spacer div to maintain layout flow */}
-                <div className="h-[500px]" /> {/* Increased height to 500px */}
-              </div>
             </div>
           </div>
         </div>
@@ -63,11 +43,6 @@ function Home() {
         {/* FeatureTabs section */}
         <div className="animate-in fade-in delay-200 duration-1000 slide-in-from-top-16 fill-mode-both">
           <FeatureTabs />
-        </div>
-
-        {/* TweetGrid section */}
-        <div className="w-full my-24">
-          <TweetGridDemo />
         </div>
 
         {/* Carousel Section */}
