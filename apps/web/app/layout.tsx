@@ -1,17 +1,26 @@
 import { cookies } from 'next/headers';
-import { Analytics } from '@vercel/analytics/react';
-import { SenjaScript } from '~/components/senja-script';
+import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 
-import { Toaster } from '@kit/ui/sonner';
+// Dynamically import Analytics to reduce initial bundle size
+const Analytics = dynamic(() => 
+  import('@vercel/analytics/react').then(mod => mod.Analytics), 
+  { ssr: false }
+);
+
+// Dynamically import Toaster with loading fallback
+const Toaster = dynamic(() => 
+  import('@kit/ui/sonner').then(mod => mod.Toaster),
+  { ssr: false }
+);
+
 import { cn } from '@kit/ui/utils';
-
 import { RootProviders } from '~/components/root-providers';
 import { heading, sans } from '~/lib/fonts';
 import { createI18nServerInstance } from '~/lib/i18n/i18n.server';
 import { generateRootMetadata } from '~/lib/root-metdata';
 
 import '../styles/globals.css';
-
 
 export default async function RootLayout({
   children,
@@ -24,14 +33,25 @@ export default async function RootLayout({
 
   return (
     <html lang={language} className={className}>
+      <head>
+        {/* Preload critical fonts */}
+        <link
+          rel="preload"
+          href={heading.url}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <RootProviders theme={theme} lang={language}>
-          {children}
+          <Suspense fallback={null}>
+            {children}
+          </Suspense>
         </RootProviders>
 
         <Toaster richColors={false} />
         <Analytics />
-        <SenjaScript />
       </body>
     </html>
   );

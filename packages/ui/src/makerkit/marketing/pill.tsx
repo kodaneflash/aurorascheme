@@ -18,17 +18,13 @@ export const Pill = forwardRef<
     <Comp
       ref={ref}
       className={cn(
-        'flex items-center space-x-2 text-center text-sm text-gray-700 dark:text-gray-200',
+        'flex items-center space-x-2 text-center text-sm text-muted-foreground',
         className,
       )}
       {...props}
     >
       {props.label && (
-        <span
-          className={
-            'rounded-2xl bg-primary px-2.5 py-1.5 text-sm font-semibold text-primary-foreground'
-          }
-        >
+        <span className={'rounded-2xl px-2.5 py-1.5 text-sm font-semibold text-muted-foreground'}>
           {props.label}
         </span>
       )}

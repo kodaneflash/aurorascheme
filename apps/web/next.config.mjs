@@ -35,6 +35,7 @@ const config = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
+    domains: ['images.unsplash.com', 'assets.aceternity.com'],
   },
   logging: {
     fetches: {
@@ -116,12 +117,9 @@ const config = {
     ];
   },
   experimental: {
-    mdxRs: true,
-    instrumentationHook: true,
     turbo: {
       resolveExtensions: ['.ts', '.tsx', '.js', '.jsx'],
     },
-    // needed for supporting dynamic imports for local content
     outputFileTracingIncludes: {
       '/*': ['./content/**/*'],
     },
@@ -140,17 +138,18 @@ const config = {
       bodySizeLimit: '2mb',
     },
     optimisticClientCache: true,
-    webpackBuildWorker: true,
+    scrollRestoration: true,
+    fontLoaders: [
+      { loader: '@next/font/google', options: { subsets: ['latin'] } }
+    ],
   },
   modularizeImports: {
     lodash: {
       transform: 'lodash/{{member}}',
     },
   },
-  /** We already do linting and typechecking as separate tasks in CI */
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
-  // Add webpack configuration for better code splitting
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.optimization.splitChunks = {

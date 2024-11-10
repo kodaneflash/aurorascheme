@@ -3,7 +3,14 @@ import type { Config } from 'tailwindcss';
 import baseConfig from '@kit/tailwind-config';
 
 export default {
-  content: [...baseConfig.content],
+  content: [
+    ...baseConfig.content,
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/lib/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/emails/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/styles/**/*.{js,ts,jsx,tsx}',
+  ],
   presets: [baseConfig],
   theme: {
     extend: {

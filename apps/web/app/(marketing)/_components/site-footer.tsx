@@ -4,7 +4,6 @@ import { Trans } from '@kit/ui/trans';
 
 import { AppLogo } from '~/components/app-logo';
 import appConfig from '~/config/app.config';
-import { NewsletterSignup } from '../NewsletterSignup';
 
 export function SiteFooter() {
   return (
@@ -63,11 +62,6 @@ export function SiteFooter() {
                     </Link>
                   </FooterLink>
                   <FooterLink>
-                    <Link href={'/newsletter'}>
-                      <Trans i18nKey={'marketing:newsletter'} />
-                    </Link>
-                  </FooterLink>
-                  <FooterLink>
                     <Link href={'/contact'}>
                       <Trans i18nKey={'marketing:contact'} />
                     </Link>
@@ -100,10 +94,6 @@ export function SiteFooter() {
                   </FooterLink>
                 </FooterSectionList>
               </div>
-            </div>
-
-            <div className={'lg:w-1/3'}>
-              <NewsletterSignup />
             </div>
           </div>
         </div>
